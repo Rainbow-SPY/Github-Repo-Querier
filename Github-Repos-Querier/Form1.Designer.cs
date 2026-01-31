@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance3 = new AntdUI.HyperlinkLabel.LinkAppearance();
-            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance4 = new AntdUI.HyperlinkLabel.LinkAppearance();
+            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance1 = new AntdUI.HyperlinkLabel.LinkAppearance();
+            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance2 = new AntdUI.HyperlinkLabel.LinkAppearance();
             this.pageHeader1 = new AntdUI.PageHeader();
             this.button1 = new AntdUI.Button();
             this.divider1 = new AntdUI.Divider();
@@ -131,6 +131,7 @@
             this.IAccountCreatedStr.SuffixSvg = "";
             this.IAccountCreatedStr.SuffixText = "";
             this.IAccountCreatedStr.TabIndex = 48;
+            this.IAccountCreatedStr.Visible = false;
             // 
             // IHelp
             // 
@@ -218,6 +219,7 @@
             this.label8.Size = new System.Drawing.Size(96, 22);
             this.label8.TabIndex = 40;
             this.label8.Text = "账号创建时间";
+            this.label8.Visible = false;
             // 
             // label7
             // 
@@ -300,6 +302,7 @@
             this.ADefaultBranch.TabIndex = 56;
             this.ADefaultBranch.Text = "$branch";
             this.ADefaultBranch.TextTitle = "";
+            this.ADefaultBranch.Visible = false;
             // 
             // AVisibility
             // 
@@ -312,6 +315,7 @@
             this.AVisibility.TabIndex = 56;
             this.AVisibility.Text = "$visibility";
             this.AVisibility.TextTitle = "";
+            this.AVisibility.Visible = false;
             // 
             // AArchived
             // 
@@ -324,6 +328,7 @@
             this.AArchived.TabIndex = 56;
             this.AArchived.Text = "该仓库已归档";
             this.AArchived.TextTitle = "";
+            this.AArchived.Visible = false;
             // 
             // ADisabled
             // 
@@ -338,18 +343,19 @@
             this.ADisabled.TabIndex = 56;
             this.ADisabled.Text = "该仓库已经被禁用";
             this.ADisabled.TextTitle = "";
+            this.ADisabled.Visible = false;
             // 
             // HyDisabledWhy
             // 
             this.HyDisabledWhy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(230)))));
             this.HyDisabledWhy.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HyDisabledWhy.HoverStyle = linkAppearance3;
+            this.HyDisabledWhy.HoverStyle = linkAppearance1;
             this.HyDisabledWhy.LinkAutoNavigation = true;
             this.HyDisabledWhy.Location = new System.Drawing.Point(142, 8);
             this.HyDisabledWhy.Name = "HyDisabledWhy";
-            linkAppearance4.LinkColor = System.Drawing.Color.Blue;
-            linkAppearance4.UnderlineColor = System.Drawing.Color.Gray;
-            this.HyDisabledWhy.NormalStyle = linkAppearance4;
+            linkAppearance2.LinkColor = System.Drawing.Color.Blue;
+            linkAppearance2.UnderlineColor = System.Drawing.Color.Gray;
+            this.HyDisabledWhy.NormalStyle = linkAppearance2;
             this.HyDisabledWhy.Size = new System.Drawing.Size(75, 23);
             this.HyDisabledWhy.TabIndex = 57;
             this.HyDisabledWhy.Text = "<a href=\"https://docs.github.com/zh/site-policy/content-removal-policies/submitti" +
@@ -371,6 +377,7 @@
             this.AForked.TabIndex = 56;
             this.AForked.Text = "该仓库为Forked";
             this.AForked.TextTitle = "";
+            this.AForked.Visible = false;
             // 
             // AMainLanguage
             // 
@@ -383,6 +390,7 @@
             this.AMainLanguage.TabIndex = 56;
             this.AMainLanguage.Text = "主要代码语言:";
             this.AMainLanguage.TextTitle = "";
+            this.AMainLanguage.Visible = false;
             // 
             // ALicence
             // 
@@ -395,6 +403,7 @@
             this.ALicence.TabIndex = 56;
             this.ALicence.Text = "";
             this.ALicence.TextTitle = "";
+            this.ALicence.Visible = false;
             // 
             // AStar
             // 
@@ -407,6 +416,7 @@
             this.AStar.TabIndex = 56;
             this.AStar.Text = "";
             this.AStar.TextTitle = "";
+            this.AStar.Visible = false;
             // 
             // Form1
             // 

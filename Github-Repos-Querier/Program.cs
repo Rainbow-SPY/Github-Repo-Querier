@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Rox.Runtimes;
+using System;
 using System.Windows.Forms;
+using static Rox.Runtimes.Reporter;
 
 namespace GithubReposQuerier
 {
@@ -11,9 +13,9 @@ namespace GithubReposQuerier
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form form1() => new Form1();
+            InitializeReportInterface reporter = new InitializeReportInterface(form1);
+            reporter.Run();
         }
     }
 }

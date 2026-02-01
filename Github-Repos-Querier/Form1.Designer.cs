@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance1 = new AntdUI.HyperlinkLabel.LinkAppearance();
-            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance2 = new AntdUI.HyperlinkLabel.LinkAppearance();
+            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance5 = new AntdUI.HyperlinkLabel.LinkAppearance();
+            AntdUI.HyperlinkLabel.LinkAppearance linkAppearance6 = new AntdUI.HyperlinkLabel.LinkAppearance();
             this.pageHeader1 = new AntdUI.PageHeader();
             this.button1 = new AntdUI.Button();
             this.divider1 = new AntdUI.Divider();
             this.IInput = new AntdUI.Input();
-            this.IAccountCreatedStr = new AntdUI.Input();
+            this.ILicense = new AntdUI.Input();
             this.IHelp = new AntdUI.Input();
             this.IUpdated = new AntdUI.Input();
             this.ICreate = new AntdUI.Input();
@@ -56,12 +55,13 @@
             this.AArchived = new AntdUI.Alert();
             this.ADisabled = new AntdUI.Alert();
             this.HyDisabledWhy = new AntdUI.HyperlinkLabel();
-            this.CDIsabledWhy = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.AForked = new AntdUI.Alert();
             this.AMainLanguage = new AntdUI.Alert();
-            this.ALicence = new AntdUI.Alert();
+            this.ALicense = new AntdUI.Alert();
             this.AStar = new AntdUI.Alert();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ADisabled.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pageHeader1
@@ -76,13 +76,13 @@
             this.pageHeader1.ShowIcon = true;
             this.pageHeader1.Size = new System.Drawing.Size(767, 32);
             this.pageHeader1.TabIndex = 32;
-            this.pageHeader1.Text = "Github 仓库查询 - v1.0.26131";
+            this.pageHeader1.Text = "Github 仓库查询 - v1.1.26201";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(550, 39);
+            this.button1.Location = new System.Drawing.Point(540, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 34);
             this.button1.TabIndex = 39;
@@ -105,33 +105,32 @@
             // 
             // IInput
             // 
-            this.IInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.IInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.IInput.BorderActive = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.IInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.IInput.BorderHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.IInput.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.IInput.Location = new System.Drawing.Point(187, 39);
+            this.IInput.Location = new System.Drawing.Point(153, 3);
             this.IInput.Name = "IInput";
             this.IInput.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(100)))), ((int)(((byte)(127)))));
             this.IInput.PlaceholderText = "请输入要查询的所有者+仓库(owner/repo)";
-            this.IInput.Size = new System.Drawing.Size(357, 34);
+            this.IInput.Size = new System.Drawing.Size(381, 34);
             this.IInput.SuffixText = "";
             this.IInput.TabIndex = 37;
             // 
-            // IAccountCreatedStr
+            // ILicense
             // 
-            this.IAccountCreatedStr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ILicense.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.IAccountCreatedStr.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.IAccountCreatedStr.Location = new System.Drawing.Point(126, 289);
-            this.IAccountCreatedStr.Name = "IAccountCreatedStr";
-            this.IAccountCreatedStr.ReadOnly = true;
-            this.IAccountCreatedStr.Size = new System.Drawing.Size(388, 33);
-            this.IAccountCreatedStr.SuffixFore = System.Drawing.SystemColors.ActiveCaptionText;
-            this.IAccountCreatedStr.SuffixSvg = "";
-            this.IAccountCreatedStr.SuffixText = "";
-            this.IAccountCreatedStr.TabIndex = 48;
-            this.IAccountCreatedStr.Visible = false;
+            this.ILicense.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ILicense.Location = new System.Drawing.Point(126, 289);
+            this.ILicense.Name = "ILicense";
+            this.ILicense.ReadOnly = true;
+            this.ILicense.Size = new System.Drawing.Size(388, 33);
+            this.ILicense.SuffixFore = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ILicense.SuffixSvg = "";
+            this.ILicense.SuffixText = "";
+            this.ILicense.TabIndex = 48;
             // 
             // IHelp
             // 
@@ -216,10 +215,9 @@
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.label8.Location = new System.Drawing.Point(11, 293);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 22);
+            this.label8.Size = new System.Drawing.Size(48, 22);
             this.label8.TabIndex = 40;
-            this.label8.Text = "账号创建时间";
-            this.label8.Visible = false;
+            this.label8.Text = "许可证";
             // 
             // label7
             // 
@@ -322,7 +320,7 @@
             this.AArchived.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AArchived.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.AArchived.Icon = AntdUI.TType.Warn;
-            this.AArchived.Location = new System.Drawing.Point(550, 313);
+            this.AArchived.Location = new System.Drawing.Point(550, 270);
             this.AArchived.Name = "AArchived";
             this.AArchived.Size = new System.Drawing.Size(205, 37);
             this.AArchived.TabIndex = 56;
@@ -336,7 +334,7 @@
             this.ADisabled.Controls.Add(this.HyDisabledWhy);
             this.ADisabled.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.ADisabled.Icon = AntdUI.TType.Warn;
-            this.ADisabled.Location = new System.Drawing.Point(550, 356);
+            this.ADisabled.Location = new System.Drawing.Point(550, 313);
             this.ADisabled.LoopInfinite = false;
             this.ADisabled.Name = "ADisabled";
             this.ADisabled.Size = new System.Drawing.Size(205, 37);
@@ -349,29 +347,24 @@
             // 
             this.HyDisabledWhy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(230)))));
             this.HyDisabledWhy.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HyDisabledWhy.HoverStyle = linkAppearance1;
+            this.HyDisabledWhy.HoverStyle = linkAppearance5;
             this.HyDisabledWhy.LinkAutoNavigation = true;
-            this.HyDisabledWhy.Location = new System.Drawing.Point(142, 8);
+            this.HyDisabledWhy.Location = new System.Drawing.Point(142, 6);
             this.HyDisabledWhy.Name = "HyDisabledWhy";
-            linkAppearance2.LinkColor = System.Drawing.Color.Blue;
-            linkAppearance2.UnderlineColor = System.Drawing.Color.Gray;
-            this.HyDisabledWhy.NormalStyle = linkAppearance2;
+            linkAppearance6.LinkColor = System.Drawing.Color.Blue;
+            linkAppearance6.UnderlineColor = System.Drawing.Color.Gray;
+            this.HyDisabledWhy.NormalStyle = linkAppearance6;
             this.HyDisabledWhy.Size = new System.Drawing.Size(75, 23);
             this.HyDisabledWhy.TabIndex = 57;
             this.HyDisabledWhy.Text = "<a href=\"https://docs.github.com/zh/site-policy/content-removal-policies/submitti" +
     "ng-content-removal-requests\">为什么?</a>";
-            // 
-            // CDIsabledWhy
-            // 
-            this.CDIsabledWhy.Name = "CDIsabledWhy";
-            this.CDIsabledWhy.Size = new System.Drawing.Size(61, 4);
             // 
             // AForked
             // 
             this.AForked.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AForked.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.AForked.Icon = AntdUI.TType.Warn;
-            this.AForked.Location = new System.Drawing.Point(550, 399);
+            this.AForked.Location = new System.Drawing.Point(550, 356);
             this.AForked.Name = "AForked";
             this.AForked.Size = new System.Drawing.Size(205, 37);
             this.AForked.TabIndex = 56;
@@ -392,18 +385,18 @@
             this.AMainLanguage.TextTitle = "";
             this.AMainLanguage.Visible = false;
             // 
-            // ALicence
+            // ALicense
             // 
-            this.ALicence.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ALicence.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.ALicence.Icon = AntdUI.TType.Success;
-            this.ALicence.Location = new System.Drawing.Point(550, 270);
-            this.ALicence.Name = "ALicence";
-            this.ALicence.Size = new System.Drawing.Size(205, 37);
-            this.ALicence.TabIndex = 56;
-            this.ALicence.Text = "";
-            this.ALicence.TextTitle = "";
-            this.ALicence.Visible = false;
+            this.ALicense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ALicense.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.ALicense.Icon = AntdUI.TType.Success;
+            this.ALicense.Location = new System.Drawing.Point(550, 399);
+            this.ALicense.Name = "ALicense";
+            this.ALicense.Size = new System.Drawing.Size(205, 37);
+            this.ALicense.TabIndex = 56;
+            this.ALicense.Text = "$License";
+            this.ALicense.TextTitle = "";
+            this.ALicense.Visible = false;
             // 
             // AStar
             // 
@@ -414,24 +407,36 @@
             this.AStar.Name = "AStar";
             this.AStar.Size = new System.Drawing.Size(205, 37);
             this.AStar.TabIndex = 56;
-            this.AStar.Text = "";
+            this.AStar.Text = "$Star";
             this.AStar.TextTitle = "";
             this.AStar.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.IInput);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(3, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(761, 37);
+            this.panel1.TabIndex = 57;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 507);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.AArchived);
             this.Controls.Add(this.ADisabled);
             this.Controls.Add(this.AStar);
             this.Controls.Add(this.AMainLanguage);
-            this.Controls.Add(this.ALicence);
+            this.Controls.Add(this.ALicense);
             this.Controls.Add(this.AForked);
             this.Controls.Add(this.AVisibility);
             this.Controls.Add(this.ADefaultBranch);
-            this.Controls.Add(this.IAccountCreatedStr);
+            this.Controls.Add(this.ILicense);
             this.Controls.Add(this.IHelp);
             this.Controls.Add(this.IUpdated);
             this.Controls.Add(this.ICreate);
@@ -447,14 +452,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LReposName);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.divider1);
-            this.Controls.Add(this.IInput);
             this.Controls.Add(this.pageHeader1);
+            this.MaximumSize = new System.Drawing.Size(1100, 800);
             this.MinimumSize = new System.Drawing.Size(767, 507);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ADisabled.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,7 +470,7 @@
         private AntdUI.Button button1;
         private AntdUI.Divider divider1;
         private AntdUI.Input IInput;
-        private AntdUI.Input IAccountCreatedStr;
+        private AntdUI.Input ILicense;
         private AntdUI.Input IHelp;
         private AntdUI.Input IUpdated;
         private AntdUI.Input ICreate;
@@ -485,12 +490,12 @@
         private AntdUI.Alert AVisibility;
         private AntdUI.Alert AArchived;
         private AntdUI.Alert ADisabled;
-        private System.Windows.Forms.ContextMenuStrip CDIsabledWhy;
         private AntdUI.HyperlinkLabel HyDisabledWhy;
         private AntdUI.Alert AForked;
         private AntdUI.Alert AMainLanguage;
-        private AntdUI.Alert ALicence;
+        private AntdUI.Alert ALicense;
         private AntdUI.Alert AStar;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
